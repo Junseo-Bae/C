@@ -5,15 +5,15 @@
 
 int main()
 {
-    int i, j, k;
+    int i, k, sum = 0;
 
     scanf("%d", &k);
 
-    for(i = 0; i >= k; i++)
+    for(i = 1; i <= k; i++)
     {
-        i = i + 1;
+        sum = sum + i;
     }
-    printf("%d", i);
+    printf("%d", sum);
 
     return 0;
 }
