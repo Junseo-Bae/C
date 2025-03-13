@@ -15,6 +15,10 @@ int main()
             {
                 printf("*");
             }
+            else if(i == 1 || i == k)
+            {
+                printf("*");
+            }
             else
             {
                 printf(" ");
@@ -22,5 +26,7 @@ int main()
         }
         printf("\n");
     }
+
+}
 
 }
