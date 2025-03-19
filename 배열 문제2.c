@@ -3,7 +3,7 @@
 int main() {
 
     int arr[10];
-    int i, n, index = 0;
+    int i, index = 0;
 
     printf("배열에 넣을 숫자를 입력하세요..\n");
 
@@ -14,7 +14,7 @@ int main() {
     
     for(i = 0; i < 10; i++)
     {
-        if(arr[i] > )
+        if(arr[i] > arr[0])
         {
             
         }
