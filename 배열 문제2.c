@@ -14,9 +14,9 @@ int main() {
     
     for(i = 0; i < 10; i++)
     {
-        if(arr[i] > arr[0])
+        if(arr[i] > index)
         {
-            
+            index = 
         }
     }
     
