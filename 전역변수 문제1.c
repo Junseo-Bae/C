@@ -17,8 +17,8 @@ int sum()
 
 void avg()
 {
-    int sum = 0;
-    double avg;
+    float sum = 0;
+    float avg;
     int i;
 
     for(i = 0; i < 5; i++)
@@ -26,7 +26,7 @@ void avg()
         sum = sum + arr[i];
     }
     avg = sum / 5;
-    printf("배열의 평균 : %f\n", avg);
+    printf("배열의 평균 : %.1lf\n", avg);
 }
 
 int main()
