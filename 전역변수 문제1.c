@@ -29,6 +29,16 @@ void avg()
     printf("배열의 평균 : %.1lf\n", avg);
 }
 
+int mid()
+{
+    int i;
+    int min;
+    for(i = 0; i < 5; i++)
+    {
+        
+    }
+}
+
 int main()
 {
    srand(time(NULL));
