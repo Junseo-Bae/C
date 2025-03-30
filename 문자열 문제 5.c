@@ -44,9 +44,11 @@ int main()
             printf("모든 문자가 같지 않습니다.");
             break;
         }
+        else
+        {
+            printf("모든 문자가 같습니다.");
+        }
     }
-
-    printf("모든 문자가 같습니다.");
 
     return 0;
 }
