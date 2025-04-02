@@ -25,7 +25,7 @@ int main()
     int i;
 
     scanf("%s", str);
-    ffllush(stdin);
+    getchar();
     scanf("%c", &find);
 
     for(i = 0; i < len; i++)
