@@ -28,7 +28,7 @@ int main()
     getchar();
     scanf("%c", &find);
 
-    for(i = 0; i < len; i++)
+    for(i = 0; i < len(str); i++)
     {
         if(str[i] == find)
         {
