@@ -32,7 +32,7 @@ int main()
     {
         if(str[i] == find)
         {
-            printf("%d", len(str));
+            printf("%d", i);
             break;
         }
     }
