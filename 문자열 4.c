@@ -1,23 +1,5 @@
 #include <stdio.h>
 
-int len(char str[])
-{
-    int i, index = 0;
-
-    for(i = 0; i < 30; i++)
-    {
-        if(str[i] == '\0')
-        {
-            break;
-        }
-        else
-        {
-            index++;
-        }
-    }
-    return index;
-}
-
 int main()
 {
     char str[30];
@@ -28,7 +10,9 @@ int main()
     getchar();
     scanf("%c", &find);
 
-    for(i = 0; i < len(str); i++)
+    int length = strlen(str);
+
+    for(i = 0; i < length; i++)
     {
         if(str[i] == find)
         {
@@ -36,7 +20,6 @@ int main()
             break;
         }
     }
-
 
     return 0;
 }
