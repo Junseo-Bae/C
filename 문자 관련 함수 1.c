@@ -3,17 +3,18 @@
 int main()
 {
     char str[30];
-    int i;
-
-//    printf("%d\n", '0');
+    int num;
 
     scanf("%s", str);
 
-    if(str[i] >= '0' && str[i] <= '9')
+    if(str[0] == '-')
     {
         
     }
+    
+    num = ( ( (str[0] - '0') * 10 + (str[1] - '0') ) * 10 + (str[2] - '0') ) * 10 + (str[3] - '0');
 
+    printf("%d", num);
 
     return 0;
 }
