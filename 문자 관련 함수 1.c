@@ -3,17 +3,25 @@
 int main()
 {
     char str[30];
-    int num;
+    int num = 0;
+    int i = 0;
 
     scanf("%s", str);
 
     if(str[0] == '-')
     {
-        num = -1 * ( ( ( (str[1] - '0') * 10 + (str[2] - '0') ) * 10 + (str[3] - '0') ) * 10 + (str[4] - '0') );
+        for(i = 1; str[i] != '\0'; i++)
+        {
+            num = num * 10 + (str[i] - '0');
+        }
+        num *= -1;
     }
     else
     {
-        num = ( ( (str[0] - '0') * 10 + (str[1] - '0') ) * 10 + (str[2] - '0') ) * 10 + (str[3] - '0');
+        for(i = 0; str[i] != '\0'; i++)
+        {
+            num = num * 10 + (str[i] - '0');
+        }
     }
 
     printf("%d", num);
