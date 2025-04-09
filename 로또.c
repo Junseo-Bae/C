@@ -8,7 +8,16 @@ int main()
     int i, j, n;
     srand(time(NULL));
 
-    scanf("%d", &n);
+    while(1)
+    {
+        scanf("%d", &n);
+
+        if(n >= 1 && n <= 5)
+        {
+            break;
+        }
+        printf("재입력");
+    }
 
     for(int i = 0; i < n; i++)
     {
