@@ -16,7 +16,7 @@ int main()
         {
             break;
         }
-        printf("재입력");
+        printf("재입력\n");
     }
 
     for(int i = 0; i < n; i++)
