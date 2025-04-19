@@ -139,6 +139,20 @@ int main()
     }
     printf("\n");
     printf("보너스 번호: %d\n", bonus);
+    
+    for(i = 0; i < n; i++)
+    {
+        for(j = 0; j < 6; j++)
+        {
+            for(k = 0; k < 6; k++)
+            {
+                if(lotto[i][j] == win[k])
+                {
+                    
+                }
+            }
+        }
+    }
 
     return 0;
 }
