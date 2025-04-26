@@ -19,9 +19,12 @@ int func(struct vector a, struct vector b)
     }
 }
 
-void sum(float a.x, float a.y, float b.x, float b.y)
+void sum(struct vector a, struct vector b)
 {
-    
+    float result_x = a.x + b.x;
+    float result_y = a.y + b.y;
+
+    printf("%f, %f", result_x, result_y);
 }
 
 int main()
@@ -39,8 +42,8 @@ int main()
     {
         printf("다릅니다.\n");
     }
-    
-    
-    
+
+    sum(a, b);
+
     return 0;
 }
