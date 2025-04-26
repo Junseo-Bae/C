@@ -19,17 +19,18 @@ int func(struct vector a, struct vector b)
     }
 }
 
-void sum(struct vector a, struct vector b)
+struct vector sum(struct vector a, struct vector b)
 {
-    float result_x = a.x + b.x;
-    float result_y = a.y + b.y;
+    struct vector v;
+    v.x = a.x + b.x;
+    v.y = a.y + b.y;
 
-    printf("%f, %f", result_x, result_y);
+    return v;
 }
 
 int main()
 {
-    struct vector a, b;
+    struct vector a, b, c;
 
     scanf("%f %f", &a.x, &a.y);
     scanf("%f %f", &b.x, &b.y);
@@ -43,7 +44,9 @@ int main()
         printf("다릅니다.\n");
     }
 
-    sum(a, b);
+    c = sum(a, b);
+
+    printf("%f %f", c.x, c.y);
 
     return 0;
 }
