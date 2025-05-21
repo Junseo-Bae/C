@@ -53,12 +53,10 @@ int add_tail(struct Node** head, char* data)
 // 전달받은 배열에 data를 추가
 int add_head(char* strArray[], char* data)
 {
-    while()
+    int i;
+    for(i = 99; i > 0; i--) 
     {
-        if(strArray[i] == '\0')
-        {
-            
-        }
+        strArray[i] = strArray[i - 1];
     }
 }
 
@@ -182,20 +180,8 @@ int main()
 {
   char* strArray[100] = {NULL};
 
-  // 연결리스트의 맨 앞에 hello 추가
+  // 배열의 맨 앞에 hello 추가
   add_head(strArray, "hello");
-
-  // 연결리스트의 맨 뒤에 world 추가
-
-  // 연결리스트의 hello 뒤에 good 추가
-
-  // 연결리스트의 2번째 뒤에 bad 추가
-
-  // 연결리스트에서 world 삭제
-
-  // 전체 연결리스트 출력
-
-  // 전체 연결리스트 삭제
 
     return 0;
 }
